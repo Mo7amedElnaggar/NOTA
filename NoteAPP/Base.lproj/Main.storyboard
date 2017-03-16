@@ -28,14 +28,16 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-dS-X6f">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-dS-X6f">
                                 <rect key="frame" x="287" y="322" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="B4n-8n-XZ0" kind="show" id="vqt-Ak-mfh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-Aa-1Cy">
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-Aa-1Cy">
                                 <rect key="frame" x="66" y="322" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="5mG-vj-2Ya" kind="show" id="8eF-Th-O0V"/>
                                 </connections>
@@ -44,14 +46,14 @@
                         <color key="backgroundColor" red="0.85510070194211518" green="1" blue="0.85251397245021798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2ke-te-fwV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1DO-n2-X2J"/>
-                            <constraint firstItem="bZD-Aa-1Cy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Hg-z9-0os"/>
                             <constraint firstItem="2ke-te-fwV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="2Ba-iQ-9Bl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="O7Z-dS-X6f" secondAttribute="trailing" constant="50" id="7Dl-cJ-pm3"/>
                             <constraint firstAttribute="trailing" secondItem="2ke-te-fwV" secondAttribute="trailing" id="AXY-NS-b39"/>
-                            <constraint firstItem="O7Z-dS-X6f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Mgc-Gf-UoE"/>
-                            <constraint firstItem="bZD-Aa-1Cy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="N6w-5t-Hra"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newNoteButton" destination="bZD-Aa-1Cy" id="Pxt-31-zD0"/>
+                        <outlet property="showNoteButton" destination="O7Z-dS-X6f" id="mBd-aC-QjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
