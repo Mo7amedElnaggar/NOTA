@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.85510070194211518" green="1" blue="0.85251397245021798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2ke-te-fwV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1DO-n2-X2J"/>
                             <constraint firstItem="2ke-te-fwV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="2Ba-iQ-9Bl"/>
@@ -91,13 +91,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="131" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-5s-MKY">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="0.85034963213261028" green="1" blue="0.85435902050759027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="131" id="5UF-xP-4Cz" customClass="NoteCell" customModule="NoteAPP" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5UF-xP-4Cz" id="qgU-Tu-9oy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-gq-JzS">
@@ -132,7 +132,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.85442012548446655" green="1" blue="0.84945446252822876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6gX-6I-eO0" firstAttribute="trailing" secondItem="3gG-5s-MKY" secondAttribute="trailing" id="2Af-M3-IZd"/>
                             <constraint firstItem="6gX-6I-eO0" firstAttribute="top" secondItem="GRJ-0O-xwz" secondAttribute="bottom" constant="8" id="TJq-bP-XkV"/>
@@ -199,7 +199,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.85442012548446655" green="1" blue="0.84945446252822876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V0b-Ms-9mC" firstAttribute="leading" secondItem="TWU-fE-jdR" secondAttribute="leading" id="BEC-eS-9sD"/>
                             <constraint firstItem="faS-ib-qQW" firstAttribute="top" secondItem="de6-T4-OCG" secondAttribute="bottom" constant="60" id="HEF-h4-0M5"/>

@@ -17,9 +17,8 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = UIColor(red: 0.4, green: 1.0 , blue: 0.5, alpha: 1.0)
-        tableView.separatorInset = .zero
-        tableView.layoutMargins = .zero
+//        tableView.separatorInset = .zero
+//        tableView.layoutMargins = .zero
         loadNotes()
     }
 
@@ -38,16 +37,6 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listNotes.count
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        let height: CGFloat = 5
-        return height
-    }
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = UIView()
-        header.backgroundColor = UIColor.clear
-        return header
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
