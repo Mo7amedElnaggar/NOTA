@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoteAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="xNota" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,21 +25,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xNota" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-te-fwV">
                                 <rect key="frame" x="0.0" y="70" width="375" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-dS-X6f">
-                                <rect key="frame" x="287" y="322" width="22" height="22"/>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-Aa-1Cy">
+                                <rect key="frame" x="66" y="322" width="76" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="B4n-8n-XZ0" kind="show" id="vqt-Ak-mfh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-Aa-1Cy">
-                                <rect key="frame" x="66" y="322" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="+"/>
                                 <connections>
                                     <segue destination="5mG-vj-2Ya" kind="show" id="8eF-Th-O0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-dS-X6f">
+                                <rect key="frame" x="229" y="322" width="39" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="▶︎"/>
+                                <connections>
+                                    <segue destination="B4n-8n-XZ0" kind="show" id="vqt-Ak-mfh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,7 +66,7 @@
         <!--Notes List-->
         <scene sceneID="E7x-Ih-ru1">
             <objects>
-                <viewController id="B4n-8n-XZ0" customClass="NotesList" customModule="NoteAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B4n-8n-XZ0" customClass="NotesList" customModule="xNota" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GRJ-0O-xwz"/>
                         <viewControllerLayoutGuide type="bottom" id="z5J-Yt-RCR"/>
@@ -93,7 +97,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="131" id="5UF-xP-4Cz" customClass="NoteCell" customModule="NoteAPP" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="131" id="5UF-xP-4Cz" customClass="NoteCell" customModule="xNota" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="131"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5UF-xP-4Cz" id="qgU-Tu-9oy">
@@ -101,27 +105,39 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-gq-JzS">
-                                                    <rect key="frame" x="8" y="8" width="359" height="24"/>
+                                                    <rect key="frame" x="8" y="8" width="329" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.29457698134224686" blue="0.38060509716640156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tAe-QL-a6g">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAe-QL-a6g">
                                                     <rect key="frame" x="8" y="40" width="359" height="82"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqS-c7-4YB">
+                                                    <rect key="frame" x="337" y="8" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="DZ5-FS-5fH"/>
+                                                        <constraint firstAttribute="width" constant="30" id="Fzg-5e-SbB"/>
+                                                    </constraints>
+                                                    <state key="normal" title="✘">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="DqS-c7-4YB" firstAttribute="leading" secondItem="ZM3-gq-JzS" secondAttribute="trailing" id="3NI-bB-E76"/>
                                                 <constraint firstItem="tAe-QL-a6g" firstAttribute="top" secondItem="ZM3-gq-JzS" secondAttribute="bottom" constant="8" id="7zt-Ow-kik"/>
                                                 <constraint firstItem="ZM3-gq-JzS" firstAttribute="top" secondItem="qgU-Tu-9oy" secondAttribute="topMargin" id="B7z-v9-XRa"/>
                                                 <constraint firstItem="ZM3-gq-JzS" firstAttribute="leading" secondItem="qgU-Tu-9oy" secondAttribute="leadingMargin" id="JKa-OH-5pz"/>
                                                 <constraint firstItem="tAe-QL-a6g" firstAttribute="bottom" secondItem="qgU-Tu-9oy" secondAttribute="bottomMargin" id="NVh-lL-dEN"/>
+                                                <constraint firstItem="DqS-c7-4YB" firstAttribute="top" secondItem="qgU-Tu-9oy" secondAttribute="topMargin" id="Srg-oi-FFF"/>
                                                 <constraint firstItem="tAe-QL-a6g" firstAttribute="leading" secondItem="qgU-Tu-9oy" secondAttribute="leadingMargin" id="TOZ-3p-34U"/>
                                                 <constraint firstItem="tAe-QL-a6g" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" id="WdT-K2-kMi"/>
-                                                <constraint firstItem="ZM3-gq-JzS" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" id="eKK-6q-edQ"/>
+                                                <constraint firstItem="DqS-c7-4YB" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" id="tqo-ja-8Sz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -154,7 +170,7 @@
         <!--New Note-->
         <scene sceneID="EvA-Ms-Mr2">
             <objects>
-                <viewController id="5mG-vj-2Ya" customClass="NewNote" customModule="NoteAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5mG-vj-2Ya" customClass="NewNote" customModule="xNota" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jkC-xs-nX6"/>
                         <viewControllerLayoutGuide type="bottom" id="4uA-m4-nUK"/>

@@ -17,8 +17,6 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.separatorInset = .zero
-//        tableView.layoutMargins = .zero
         loadNotes()
     }
 
@@ -46,6 +44,7 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         
         return cell
     }
+    
     
     func loadNotes(){
         let fetchRequest: NSFetchRequest<Notes> = Notes.fetchRequest()

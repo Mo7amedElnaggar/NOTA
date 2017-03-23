@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "34A355CA1E77287700083F94"
-               BuildableName = "NoteAPP.app"
-               BlueprintName = "NoteAPP"
-               ReferencedContainer = "container:NoteAPP.xcodeproj">
+               BuildableName = "xNota.app"
+               BlueprintName = "xNota"
+               ReferencedContainer = "container:xNota.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "34A355CA1E77287700083F94"
-            BuildableName = "NoteAPP.app"
-            BlueprintName = "NoteAPP"
-            ReferencedContainer = "container:NoteAPP.xcodeproj">
+            BuildableName = "xNota.app"
+            BlueprintName = "xNota"
+            ReferencedContainer = "container:xNota.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "34A355CA1E77287700083F94"
-            BuildableName = "NoteAPP.app"
-            BlueprintName = "NoteAPP"
-            ReferencedContainer = "container:NoteAPP.xcodeproj">
+            BuildableName = "xNota.app"
+            BlueprintName = "xNota"
+            ReferencedContainer = "container:xNota.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "34A355CA1E77287700083F94"
-            BuildableName = "NoteAPP.app"
-            BlueprintName = "NoteAPP"
-            ReferencedContainer = "container:NoteAPP.xcodeproj">
+            BuildableName = "xNota.app"
+            BlueprintName = "xNota"
+            ReferencedContainer = "container:xNota.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

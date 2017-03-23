@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NoteAPP.xcodeproj">
+      location = "self:/Users/naggar/Documents/Projects/GitProjects/xNOTA/xNota.xcodeproj">
    </FileRef>
 </Workspace>
