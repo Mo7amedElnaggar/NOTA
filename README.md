@@ -9,7 +9,7 @@ language used : Swift 3 (Apple’s latest Programming Language)
    * Open xNOTA in your xCode (Apple’s IDE)
 
 ## DEMO
-![Alt tag](https://media.giphy.com/media/zpJTueTuaGBO0/giphy.gif)
+![](https://media.giphy.com/media/hJUWynW3SjzFu/giphy.gif)
 
 ## App photos
 ![](ScreenShot/1.png)
