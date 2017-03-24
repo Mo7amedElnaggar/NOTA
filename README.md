@@ -9,11 +9,7 @@ language used : Swift 3 (Apple’s latest Programming Language)
    * Open xNOTA in your xCode (Apple’s IDE)
 
 ## DEMO
-<iframe width="700" height="400"
-						src="https://www.youtube.com/embed/w0AwSggsfzU">
-						</iframe>
-						
-[![ScreenShot](https://raw.github.com/Mo7amedElnaggar/xNOTA/ScreenShot/1.png)](http://youtu.be/w0AwSggsfzU)
+![Alt tag](https://media.giphy.com/media/zpJTueTuaGBO0/giphy.gif)
 
 ## App photos
 ![](ScreenShot/1.png)
