@@ -12,9 +12,8 @@ language used : Swift 3 (Apple’s latest Programming Language)
 <iframe width="700" height="400"
 						src="https://www.youtube.com/embed/w0AwSggsfzU">
 						</iframe>
-
-
-![Demo Video](ScreenShot/1.png)](https://www.youtube.com/watch?v=w0AwSggsfzU)
+						
+[![ScreenShot](https://raw.github.com/Mo7amedElnaggar/xNOTA/ScreenShot/1.png)](http://youtu.be/w0AwSggsfzU)
 
 ## App photos
 ![](ScreenShot/1.png)
