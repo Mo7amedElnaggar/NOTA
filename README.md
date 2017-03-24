@@ -8,6 +8,10 @@ language used : Swift 3 (Apple’s latest Programming Language)
       * Clone Repository ->  git clone https://github.com/Mo7amedElnaggar/xNOTA.git
    * Open xNOTA in your xCode (Apple’s IDE)
 
+## DEMO
+<iframe width="700" height="400"
+						src="https://www.youtube.com/embed/w0AwSggsfzU">
+						</iframe>
 
 ## App photos
 ![](ScreenShot/1.png)
