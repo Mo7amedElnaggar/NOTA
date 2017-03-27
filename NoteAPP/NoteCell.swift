@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NoteCell: UITableViewCell {
 
@@ -23,6 +24,23 @@ class NoteCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    @IBAction func deleteNote(_ sender: Any) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
+        
+        let result = try? context.fetch(fetchRequest)
+        
+        let resultData = result as! [Notes]
+        for object in resultData {
+            if object.title == self.noteTitle.text && object.text == self.noteText.text {
+                context.delete(object)
+            }
+        }
+        do {
+            try context.save()
+        } catch {
+            print("Error")
+        }
+    }
     
     func initialize(_ note: Notes){
         noteTitle.text = note.title
@@ -31,5 +49,4 @@ class NoteCell: UITableViewCell {
         self.layer.cornerRadius = 10
         self.clipsToBounds = true
     }
-
 }

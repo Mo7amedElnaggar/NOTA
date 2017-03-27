@@ -92,16 +92,16 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="131" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-5s-MKY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="142" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3gG-5s-MKY">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="131" id="5UF-xP-4Cz" customClass="NoteCell" customModule="xNota" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="131"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCell" rowHeight="142" id="5UF-xP-4Cz" customClass="NoteCell" customModule="xNota" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="142"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5UF-xP-4Cz" id="qgU-Tu-9oy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM3-gq-JzS">
@@ -111,7 +111,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAe-QL-a6g">
-                                                    <rect key="frame" x="8" y="40" width="359" height="82"/>
+                                                    <rect key="frame" x="13" y="40" width="359" height="91.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -126,17 +126,20 @@
                                                     <state key="normal" title="✘">
                                                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="deleteNote:" destination="5UF-xP-4Cz" eventType="touchUpInside" id="jpN-PR-Spi"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DqS-c7-4YB" firstAttribute="leading" secondItem="ZM3-gq-JzS" secondAttribute="trailing" id="3NI-bB-E76"/>
-                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="top" secondItem="ZM3-gq-JzS" secondAttribute="bottom" constant="8" id="7zt-Ow-kik"/>
                                                 <constraint firstItem="ZM3-gq-JzS" firstAttribute="top" secondItem="qgU-Tu-9oy" secondAttribute="topMargin" id="B7z-v9-XRa"/>
+                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="leading" secondItem="qgU-Tu-9oy" secondAttribute="leadingMargin" constant="5" id="GaH-nC-0bC"/>
                                                 <constraint firstItem="ZM3-gq-JzS" firstAttribute="leading" secondItem="qgU-Tu-9oy" secondAttribute="leadingMargin" id="JKa-OH-5pz"/>
-                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="bottom" secondItem="qgU-Tu-9oy" secondAttribute="bottomMargin" id="NVh-lL-dEN"/>
                                                 <constraint firstItem="DqS-c7-4YB" firstAttribute="top" secondItem="qgU-Tu-9oy" secondAttribute="topMargin" id="Srg-oi-FFF"/>
-                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="leading" secondItem="qgU-Tu-9oy" secondAttribute="leadingMargin" id="TOZ-3p-34U"/>
-                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" id="WdT-K2-kMi"/>
+                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" constant="5" id="Uj8-7C-ugJ"/>
+                                                <constraint firstItem="tAe-QL-a6g" firstAttribute="top" secondItem="ZM3-gq-JzS" secondAttribute="bottom" constant="8" symbolic="YES" id="Xld-f5-4K9"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="tAe-QL-a6g" secondAttribute="bottom" constant="2" id="mkC-Xu-Iof"/>
                                                 <constraint firstItem="DqS-c7-4YB" firstAttribute="trailing" secondItem="qgU-Tu-9oy" secondAttribute="trailingMargin" id="tqo-ja-8Sz"/>
                                             </constraints>
                                         </tableViewCellContentView>

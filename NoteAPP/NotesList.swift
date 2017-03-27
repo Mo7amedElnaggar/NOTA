@@ -13,6 +13,7 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     @IBOutlet weak var tableView: UITableView!
     var listNotes = [Notes]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -35,6 +36,31 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listNotes.count
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
+            
+            let result = try? context.fetch(fetchRequest)
+            let resultData = result as! [Notes]
+            
+            for object in resultData {
+                if object.title == listNotes[indexPath.row].title {
+                    context.delete(object)
+                }
+            }
+            
+            do {
+                try context.save()
+                //print("saved!")
+            } catch {
+                alertME("ERROr", "Try again")
+            }
+            listNotes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
