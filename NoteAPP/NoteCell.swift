@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 
 class NoteCell: UITableViewCell {
+    
+    @IBOutlet weak var buttonDelete: UIButton!
 
     @IBOutlet weak var noteTitle: UILabel!
     @IBOutlet weak var noteText: UITextView!
@@ -23,23 +25,6 @@ class NoteCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    @IBAction func deleteNote(_ sender: Any) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
-        
-        let result = try? context.fetch(fetchRequest)
-        
-        let resultData = result as! [Notes]
-        for object in resultData {
-            if object.title == self.noteTitle.text && object.text == self.noteText.text {
-                context.delete(object)
-            }
-        }
-        do {
-            try context.save()
-        } catch {
-            print("Error")
-        }
     }
     
     func initialize(_ note: Notes){

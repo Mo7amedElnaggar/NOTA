@@ -18,6 +18,7 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = UIColor(red: 0.3, green: 0.55, blue: 0.43, alpha: 0.5)
         loadNotes()
     }
 
@@ -38,37 +39,41 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         return listNotes.count
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            
-            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
-            
-            let result = try? context.fetch(fetchRequest)
-            let resultData = result as! [Notes]
-            
-            for object in resultData {
-                if object.title == listNotes[indexPath.row].title {
-                    context.delete(object)
-                }
-            }
-            
-            do {
-                try context.save()
-                //print("saved!")
-            } catch {
-                alertME("ERROr", "Try again")
-            }
-            listNotes.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell") as! NoteCell
-        
         cell.initialize(listNotes[indexPath.row])
+        cell.buttonDelete.tag = indexPath.row
         
         return cell
+    }
+    
+
+    @IBAction func DeleteRecord(_ sender: Any) {
+        let btn = sender as! UIButton
+        let indexPath = NSIndexPath(item: btn.tag, section: 0) as! IndexPath
+        
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
+        
+        let result = try? context.fetch(fetchRequest)
+        let resultData = result as! [Notes]
+        
+        for object in resultData {
+            if object.title == listNotes[indexPath.row].title {
+                context.delete(object)
+            }
+        }
+        
+        do {
+            try context.save()
+            //print("saved!")
+        } catch {
+            alertME("ERROr", "Try again")
+        }
+        
+        listNotes.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .bottom)
     }
     
     
@@ -92,9 +97,5 @@ class NotesList: UIViewController , UITableViewDelegate , UITableViewDataSource 
         DispatchQueue.main.asyncAfter(deadline: aTime){
             alert.dismiss(animated: true, completion: nil)
         }
-        
     }
-    
-    
-    
 }
