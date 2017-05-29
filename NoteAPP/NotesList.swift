@@ -20,6 +20,8 @@ class NotesList: UIViewController , UITableViewDelegate  {
         tableView.dataSource = self
         tableView.backgroundColor = UIColor(red: 0.3, green: 0.55, blue: 0.43, alpha: 0.5)
         loadAllNotes()
+        
+        tableView.separatorInset = .zero
     }
 
     override func didReceiveMemoryWarning() {
