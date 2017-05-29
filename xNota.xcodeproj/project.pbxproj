@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340C4BCE1EDC64D3006CD249 /* coreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340C4BCD1EDC64D3006CD249 /* coreData.swift */; };
 		34A355CF1E77287800083F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A355CE1E77287800083F94 /* AppDelegate.swift */; };
 		34A355D11E77287800083F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A355D01E77287800083F94 /* ViewController.swift */; };
 		34A355D41E77287800083F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A355D21E77287800083F94 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340C4BCD1EDC64D3006CD249 /* coreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coreData.swift; sourceTree = "<group>"; };
 		34A355CB1E77287800083F94 /* xNota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xNota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A355CE1E77287800083F94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A355D01E77287800083F94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340C4BCF1EDC64F7006CD249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				340C4BCD1EDC64D3006CD249 /* coreData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		34A355C21E77287700083F94 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 				34A355D21E77287800083F94 /* Main.storyboard */,
 				34A355E71E7740A400083F94 /* NoteCell.swift */,
 				34A355E51E7735D100083F94 /* NotesList.swift */,
+				340C4BCF1EDC64F7006CD249 /* Model */,
 				34A355E31E7735B600083F94 /* NewNote.swift */,
 				34A355D81E77287800083F94 /* Assets.xcassets */,
 				34A355DA1E77287800083F94 /* LaunchScreen.storyboard */,
@@ -152,6 +163,7 @@
 				34A355E61E7735D100083F94 /* NotesList.swift in Sources */,
 				34A355E41E7735B600083F94 /* NewNote.swift in Sources */,
 				34A355D11E77287800083F94 /* ViewController.swift in Sources */,
+				340C4BCE1EDC64D3006CD249 /* coreData.swift in Sources */,
 				34A355E81E7740A400083F94 /* NoteCell.swift in Sources */,
 				34A355CF1E77287800083F94 /* AppDelegate.swift in Sources */,
 				34A355D71E77287800083F94 /* NoteAPP.xcdatamodeld in Sources */,
