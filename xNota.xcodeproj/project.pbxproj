@@ -53,6 +53,36 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		349243721EDC848A0022DA6F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34A355D01E77287800083F94 /* ViewController.swift */,
+				34A355E31E7735B600083F94 /* NewNote.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		349243731EDC84A00022DA6F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34A355CE1E77287800083F94 /* AppDelegate.swift */,
+				34A355D81E77287800083F94 /* Assets.xcassets */,
+				34A355DA1E77287800083F94 /* LaunchScreen.storyboard */,
+				34A355DD1E77287800083F94 /* Info.plist */,
+				34A355D51E77287800083F94 /* NoteAPP.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		349243741EDC84E10022DA6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34A355E71E7740A400083F94 /* NoteCell.swift */,
+				34A355E51E7735D100083F94 /* NotesList.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		34A355C21E77287700083F94 = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +102,11 @@
 		34A355CD1E77287800083F94 /* xNota */ = {
 			isa = PBXGroup;
 			children = (
-				34A355CE1E77287800083F94 /* AppDelegate.swift */,
-				34A355D01E77287800083F94 /* ViewController.swift */,
 				34A355D21E77287800083F94 /* Main.storyboard */,
-				34A355E71E7740A400083F94 /* NoteCell.swift */,
-				34A355E51E7735D100083F94 /* NotesList.swift */,
+				349243721EDC848A0022DA6F /* Controllers */,
+				349243741EDC84E10022DA6F /* View */,
 				340C4BCF1EDC64F7006CD249 /* Model */,
-				34A355E31E7735B600083F94 /* NewNote.swift */,
-				34A355D81E77287800083F94 /* Assets.xcassets */,
-				34A355DA1E77287800083F94 /* LaunchScreen.storyboard */,
-				34A355DD1E77287800083F94 /* Info.plist */,
-				34A355D51E77287800083F94 /* NoteAPP.xcdatamodeld */,
+				349243731EDC84A00022DA6F /* Supporting Files */,
 			);
 			name = xNota;
 			path = NoteAPP;
