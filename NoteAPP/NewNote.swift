@@ -34,13 +34,19 @@ class NewNote: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
     @IBAction func addNewNote(_ sender: Any) {
-        let newNote = Notes(context: context)
-        newNote.title = noteTitle.text
-        newNote.text = noteText.text
-        appDelegate.saveContext()
-        alertME("DONE", "Your note saved Successfully")
-        clearData()
+        guard let title = noteTitle.text , title != "" else { return }
+        guard let text = noteText.text , text != "" else { return }
+        
+        coreData.saveData(note: (title , text)) { (success) in
+            if success {
+                alertME("Done", "Your Note Save successfully")
+                clearData()
+            } else {
+                alertME("Error", "Error While save in Core data , please try again")
+            }
+        }
     }
     
     func alertME(_ title: String , _ message: String){
