@@ -9,11 +9,7 @@ to main Operation
 
 
 ## Frames
-![](ScreenShot/iPhone6_Frames/1.png)
-![](ScreenShot/iPhone6_Frames/2.png)
-![](ScreenShot/iPhone6_Frames/3.png)
-![](ScreenShot/iPhone6_Frames/4.png)
-
+![](ScreenShot/Drawing.png)
 
 ## Main.storyBoard
 ![](ScreenShot/MainScreen/MainStoryboard_imac2015_front.png)
