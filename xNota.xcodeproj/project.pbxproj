@@ -87,7 +87,6 @@
 			children = (
 				3400BD861EFF2CD000517B4E /* AppDelegate.swift */,
 				3400BD901EFF2CD000517B4E /* Assets.xcassets */,
-				3400BD921EFF2CD000517B4E /* LaunchScreen.storyboard */,
 				3400BD951EFF2CD000517B4E /* Info.plist */,
 				3400BDA11EFF2D9A00517B4E /* xNota.xcdatamodeld */,
 			);
@@ -99,6 +98,7 @@
 			children = (
 				3400BD8A1EFF2CD000517B4E /* Main.storyboard */,
 				3400BDA61EFF32B400517B4E /* noteCell.swift */,
+				3400BD921EFF2CD000517B4E /* LaunchScreen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";

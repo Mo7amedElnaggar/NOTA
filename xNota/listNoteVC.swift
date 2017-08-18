@@ -22,13 +22,6 @@ class listNoteVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Remove top Margins Programmatically
-        self.automaticallyAdjustsScrollViewInsets = false
-        
-        
-        listTableView.delegate = self
-        listTableView.dataSource = self
-        listTableView.separatorStyle = .none
         
         loadNotes()
         if notes.count == 0 {
@@ -93,6 +86,14 @@ extension listNoteVC: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell") as! noteCell
         
         cell.noteView.backgroundColor = UIColor.green
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
     }
     
 }
